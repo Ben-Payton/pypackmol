@@ -1,0 +1,17 @@
+[project]
+name = "pypackmol"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ben Payton", email = "paytonb99@proton.me" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pypackmol = "pypackmol:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
