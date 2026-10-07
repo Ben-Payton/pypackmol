@@ -12,4 +12,10 @@ def points_in_box(box_x:tuple[float,float],box_y:tuple[float,float],box_z:tuple[
     Returns:
         bool: True if the point is inside the box, False otherwise.
     """
-    pass
+    x_check  = point_coords[0] > min(box_x) and point_coords[0] < max(box_x)
+    
+    y_check  = point_coords[1] > min(box_y) and point_coords[1] < max(box_y)
+    
+    z_check  = point_coords[2] > min(box_z) and point_coords[2] < max(box_z) 
+
+    return x_check and y_check and z_check
